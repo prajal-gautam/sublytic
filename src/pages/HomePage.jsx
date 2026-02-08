@@ -5,7 +5,7 @@ import {
   Smartphone, Download, Star, Users, LayoutDashboard, MousePointerClick,
   PieChart, Bell, Plus, Link, LayoutGrid, AlertCircle, Ban, Wallet,
   BellRing, CheckCircle2, Calendar, ArrowRight, ArrowUpRight,
-  Facebook, Twitter, Linkedin, Instagram, Menu, X, Info
+  Facebook, Twitter, Linkedin, Instagram, Menu, X, Info, Play
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
@@ -638,6 +638,104 @@ const DownloadSection = () => {
 /* -------------------------------------------------------------------------- */
 /*                                 CTA Section                                */
 /* -------------------------------------------------------------------------- */
+const FAQSection = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const faqs = [
+    {
+      question: "How does Sublytic track my subscriptions?",
+      answer: "Sublytic securely connects to your bank account or email to detect recurring transactions and charges. We use bank-level encryption to keep your data safe."
+    },
+    {
+      question: "Is it safe to connect my bank account?",
+      answer: "Absolutely. We use military-grade encryption and never store your passwords. Your financial data is protected with the same security standards as major banks."
+    },
+    {
+      question: "Can I cancel subscriptions directly from Sublytic?",
+      answer: "Yes! For supported services like Netflix, Spotify, and others, you can cancel directly through the app. For others, we provide step-by-step guidance."
+    },
+    {
+      question: "How much can I save with Sublytic?",
+      answer: "The average user saves $300+ per year by canceling forgotten subscriptions. Your savings depend on how many unused subscriptions you have."
+    },
+    {
+      question: "Do you offer a free trial?",
+      answer: "Yes! We offer a 30-day free trial with full access to all features. No credit card required to get started."
+    },
+    {
+      question: "How do I get support if I have questions?",
+      answer: "Our support team is available 24/7 via chat, email, and phone. We typically respond within 1 hour during business hours."
+    }
+  ];
+
+  return (
+    <section id="faq" className="py-24 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <span className="text-blue-600 font-semibold tracking-wider uppercase text-sm mb-3 block">Questions?</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-gray-600">
+            Everything you need to know about Sublytic
+          </p>
+        </motion.div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300"
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50/50 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
+                <motion.div
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex-shrink-0 ml-4"
+                >
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </motion.div>
+              </button>
+              <AnimatePresence>
+                {openIndex === index && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="px-6 pb-4"
+                  >
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* -------------------------------------------------------------------------- */
+/*                              CTA Section                                    */
+/* -------------------------------------------------------------------------- */
 const CTASection = () => {
   const { toast } = useToast();
 
@@ -823,6 +921,7 @@ export default function HomePage() {
         <Features />
         <HowItWorks />
         <DownloadSection />
+        <FAQSection />
         <CTASection />
       </main>
 
