@@ -172,8 +172,8 @@ const Hero = () => {
           alt="Person frustrated with too many subscriptions and bills"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-gray-900/80 to-blue-900/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80"></div>
       </div>
 
       {/* Hero Content */}
