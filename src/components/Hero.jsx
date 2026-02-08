@@ -25,11 +25,15 @@ function Hero() {
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1655818145332-28100d77ffaf"
-            alt="Person frustrated with too many subscriptions and bills"
-            className="w-full h-full object-cover"
-          />
+            <video
+              src="/Sublytics.mp4"
+              aria-label="Background video showing subscription concept"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-gray-900/80 to-blue-900/40"></div>
           
           {/* Subtle animated mesh gradient */}
