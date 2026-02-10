@@ -1,14 +1,415 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-		<meta name="generator" content="Hostinger Horizons" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hostinger Horizons</title>
-	</head>
-	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="color-scheme" content="light dark">
+    
+    <!-- Primary Meta Tags -->
+    <title>Sublytic - Stop Wasting Money on Forgotten Subscriptions</title>
+    <meta name="title" content="Sublytic - Stop Wasting Money on Forgotten Subscriptions">
+    <meta name="description" content="Manage all your subscriptions in one place. See what you're paying for, cancel with one click, and save money with Sublytic. Save $3,000-$5,000 per year.">
+    <meta name="keywords" content="subscription management, cancel subscriptions, save money, subscription tracker, recurring payments">
+    <meta name="author" content="Sublytic Inc">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sublyticofficial.com/">
+    <meta property="og:title" content="Sublytic - Stop Wasting Money on Forgotten Subscriptions">
+    <meta property="og:description" content="Manage all your subscriptions in one place. Cancel with one click. Save thousands per year.">
+    <meta property="og:image" content="https://sublyticofficial.com/og-image.png">
+    <meta property="og:site_name" content="Sublytic">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sublyticofficial.com/">
+    <meta property="twitter:title" content="Sublytic - Stop Wasting Money on Forgotten Subscriptions">
+    <meta property="twitter:description" content="Manage all your subscriptions in one place. Cancel with one click. Save thousands per year.">
+    <meta property="twitter:image" content="https://sublyticofficial.com/twitter-image.png">
+    <meta property="twitter:creator" content="@sublytic">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sublyticofficial.com/">
+    
+    <!-- DNS Prefetch & Preconnect -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' width='100' height='100' rx='15'/><text x='50' y='65' font-size='80' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%232563eb' width='192' height='192' rx='30'/><text x='96' y='140' font-size='160' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>">
+    
+   
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="sublyticlogo.jpeg" alt="Sublytic Logo" class="logo-icon">
+                <span class="logo-text">Sublytic</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+                <button class="nav-link" onclick="smoothScroll('what-is')" aria-label="Navigate to What Is It section">What Is It?</button>
+                <button class="nav-link" onclick="smoothScroll('features')" aria-label="Navigate to Features section">Features</button>
+                <button class="nav-link" onclick="smoothScroll('how-it-works')" aria-label="Navigate to How It Works section">How It Works</button>
+                <a href="#download" class="btn-download" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app">Download App</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile Navigation" aria-hidden="true">
+            <button class="nav-link-mobile" onclick="smoothScroll('what-is')" aria-label="Navigate to What Is It section">What Is It?</button>
+            <button class="nav-link-mobile" onclick="smoothScroll('features')" aria-label="Navigate to Features section">Features</button>
+            <button class="nav-link-mobile" onclick="smoothScroll('how-it-works')" aria-label="Navigate to How It Works section">How It Works</button>
+            <a href="#download" class="btn-download" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app">Download App</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <p class="hero-badge">✨ The smarter way to manage subscriptions</p>
+                <h1 class="hero-title">Stop Wasting Money on <span class="gradient-text">Forgotten Subscriptions</span></h1>
+                <p class="hero-subtitle">See what you're really paying for. Cancel with one click. Save thousands per year.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app now">Download App Now</a>
+                    <button class="btn-secondary" onclick="smoothScroll('features')" aria-label="Learn more about Sublytic features">Learn More</button>
+                </div>
+                <p class="hero-available">✓ Available on iOS & Android</p>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen"></div>
+                </div>
+                <div class="phone-shadow"></div>
+                <div class="glow-element glow-1"></div>
+                <div class="glow-element glow-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Sublytic Section -->
+    <section id="what-is" class="what-is-section">
+        <div class="container">
+            <div class="what-is-content">
+                <div class="what-is-visual">
+                    <div class="dashboard-shape">
+                        <div class="dashboard-header"></div>
+                        <div class="dashboard-stats">
+                            <div class="stat-box stat-1"></div>
+                            <div class="stat-box stat-2"></div>
+                        </div>
+                        <div class="dashboard-items">
+                            <div class="item-row"></div>
+                            <div class="item-row"></div>
+                            <div class="item-row"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="what-is-text">
+                    <h2 class="section-title">What is <span class="highlight">Sublytic?</span></h2>
+                    <p class="section-description">Sublytic is your personal subscription assistant. We help you discover, organize, and manage all your recurring payments in one place.</p>
+                    <ul class="feature-list">
+                        <li><span class="list-icon">📊</span> <span>See all subscriptions at a glance</span></li>
+                        <li><span class="list-icon">💰</span> <span>Understand your spending patterns</span></li>
+                        <li><span class="list-icon">🎯</span> <span>Get smart cancellation recommendations</span></li>
+                        <li><span class="list-icon">⚡</span> <span>Cancel unwanted services instantly</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to take control of your subscriptions</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">📊</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Dashboard</h3>
+                        <p>Get a comprehensive overview of all your subscriptions, spending, and trends at a glance.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">🔍</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Auto-Discovery</h3>
+                        <p>Automatically detect subscriptions from your bank statements, emails, and payment methods.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">💡</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Recommendations</h3>
+                        <p>Get AI-powered suggestions on which subscriptions you should cancel to save money.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">🔔</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Alerts</h3>
+                        <p>Receive notifications about upcoming charges and subscription price increases.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">🚀</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>One-Click Cancel</h3>
+                        <p>Cancel any subscription directly from the app without dealing with customer service.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-visual">
+                        <div class="feature-icon">📈</div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Analytics & Insights</h3>
+                        <p>Track your subscription spending over time and identify saving opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get started in three simple steps</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-visual">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Connect Your Accounts</h3>
+                        <p>Link your bank accounts and payment methods securely. We use bank-level encryption.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-visual">
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Auto-Detect Subscriptions</h3>
+                        <p>Our AI automatically identifies all your recurring payments from your transaction history.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-visual">
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Manage & Save</h3>
+                        <p>Cancel unwanted subscriptions with one click and watch your savings grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2 class="section-title">Ready to Save Money?</h2>
+            <p class="section-subtitle">Download Sublytic today and start managing your subscriptions like a pro</p>
+
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/app/sublytic" target="_blank" rel="noopener noreferrer" class="btn-download-large ios" aria-label="Download Sublytic on Apple App Store">📱 Download on App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.sublytic" target="_blank" rel="noopener noreferrer" class="btn-download-large android" aria-label="Download Sublytic on Google Play Store">🟢 Get it on Google Play</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span>Is it safe to connect my bank account?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1">
+                        <p>Yes! We use bank-level encryption (256-bit SSL) and never store your passwords. We only have access to read-only transaction data.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span>How much can I save?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2">
+                        <p>The average user saves $3,000-$5,000 per year by identifying and canceling unused subscriptions. Your savings depend on how many subscriptions you have.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span>Do you offer a free trial?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3">
+                        <p>Yes! Try Sublytic free for 14 days. No credit card required. After that, choose from our affordable subscription plans.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span>Can I cancel subscriptions through Sublytic?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4">
+                        <p>Yes! For most subscriptions, you can cancel directly from the app. For others, we provide step-by-step instructions or handle it for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span>Which payment methods are supported?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5">
+                        <p>We support all major payment methods: Credit cards, debit cards, PayPal, Apple Pay, Google Pay, and bank transfers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-answer-6">
+                        <span>What if I need help?</span>
+                        <span class="faq-toggle" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6">
+                        <p>Our support team is available 24/7 via chat, email, and phone. We're here to help you save money and manage your subscriptions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2 class="section-title">Take Control of Your Subscriptions</h2>
+            <p class="section-subtitle">Join thousands of users saving money every day</p>
+            <a href="#download" class="btn-primary-large" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app now">Download Sublytic Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">S</div>
+                        <span>Sublytic</span>
+                    </div>
+                    <p class="footer-description">Empowering businesses with intelligent data analytics. Transform your raw data into actionable growth strategies.</p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on Facebook">f</a>
+                        <a href="https://twitter.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on X (Twitter)">𝕏</a>
+                        <a href="https://linkedin.com/company/sublytic" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on LinkedIn">in</a>
+                        <a href="https://instagram.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on Instagram">📷</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features" onclick="smoothScroll('features'); return false;">Features</a></li>
+                        <li><a href="#download" onclick="smoothScroll('download'); return false;">Pricing</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Integrations</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Enterprise</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://docs.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                        <li><a href="https://api.sublyticofficial.com" target="_blank" rel="noopener noreferrer">API Reference</a></li>
+                        <li><a href="https://community.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Community</a></li>
+                        <li><a href="https://blog.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                        <li><a href="https://sublyticofficial.com/case-studies" target="_blank" rel="noopener noreferrer">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://sublyticofficial.com/about" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                        <li><a href="https://sublyticofficial.com/careers" target="_blank" rel="noopener noreferrer">Careers</a></li>
+                        <li><a href="https://sublyticofficial.com/legal" target="_blank" rel="noopener noreferrer">Legal</a></li>
+                        <li><a href="https://sublyticofficial.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li><a href="mailto:sublyticofficial@gmail.com" aria-label="Email Sublytic">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <div class="footer-leadership">
+                        <div>
+                            <p class="leadership-label">Co-Founder</p>
+                            <p class="leadership-name">Prajal Gautam</p>
+                            <a href="mailto:prajal.gautam.co@gmail.com">prajal.gautam.co@gmail.com</a>
+                        </div>
+                        <div>
+                            <p class="leadership-label">Co-Founder</p>
+                            <p class="leadership-name">Dipesh Thapa</p>
+                            <a href="mailto:dipeshthapa30@gmail.com">dipeshthapa30@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Sublytic Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://sublyticofficial.com/privacy" aria-label="Read Sublytic Privacy Policy">Privacy</a>
+                    <a href="https://sublyticofficial.com/terms" aria-label="Read Sublytic Terms of Service">Terms</a>
+                    <a href="https://sublyticofficial.com/cookies" aria-label="Read Sublytic Cookie Policy">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
