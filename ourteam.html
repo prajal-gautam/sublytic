@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Our Team – Sublytic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #2F3C7F;
+            --accent: #4ABD95;
+            --bg: #f6f7fb;
+            --card-bg: #ffffff;
+            --text-dark: #111827;
+            --text-muted: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text-dark);
+        }
+
+        .team-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+        }
+
+        .team-wrapper {
+            background: #f9f6ef;
+            border-radius: 40px;
+            padding: 60px 40px;
+            max-width: 1100px;
+            width: 100%;
+            box-shadow: 0 40px 120px rgba(47, 60, 127, 0.15);
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .team-header h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .team-header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .team-card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 30px 25px 35px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .team-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 40px 100px rgba(47, 60, 127, 0.25);
+        }
+
+        .team-img {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--accent);
+        }
+
+        .team-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .team-card span {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .team-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 16px 0 22px;
+            line-height: 1.6;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .socials a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 60, 127, 0.08);
+    color: var(--primary);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+    transform: translateY(-4px) scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+
+<section class="team-section">
+    <div class="team-wrapper">
+        <div class="team-header">
+            <h1>Our Team</h1>
+            <p>
+                We’re building Sublytic with a clear mission:  
+                help people regain control over their money with clarity, simplicity, and trust.
+            </p>
+        </div>
+
+       <div class="team-grid">
+
+    <!-- Prajal -->
+    <div class="team-card">
+        <div class="team-img">
+            <img src="prajal.jpeg" alt="Prajal Gautam">
+        </div>
+        <h3>Prajal Gautam</h3>
+        <span>Co-Founder</span>
+        <p>
+            Vision-driven leader focused on building scalable fintech products
+            that empower smarter financial decisions.
+        </p>
+        <div class="socials">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/prajal-gautam-272a603a8/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/prajal-gautam" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Email -->
+    <!-- Email -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prajal.gautam.co@gmail.com&su=Hello%20Prajal&body=Hi%20Prajal,%20I%20would%20like%20to%20connect." target="_blank">
+    <i class="fas fa-envelope"></i>
+</a>
+
+
+    <!-- Portfolio Website -->
+    <a href="https://gtmprajal.com.np/" target="_blank">
+        <i class="fas fa-globe"></i>
+    </a>
+</div>
+
+    </div>
+
+    <!-- Dipesh -->
+    <div class="team-card">
+        <div class="team-img">
+            <img src="dipesh.jpeg" alt="Dipesh Thapa">
+        </div>
+        <h3>Dipesh Thapa</h3>
+        <span>Co-Founder</span>
+        <p>
+            Tech-focused builder behind Sublytic’s core systems,
+            ensuring performance, security, and long-term scalability.
+        </p>
+        <div class="socials">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/dipesh-thapa-811307342?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/dipesh.thapa.02?igsh=eDAxeDJlNnZiNmU5&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/dipesht-02" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- Email -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dipesh.02.thapa@gmail.com&su=Hello%20Dipesh&body=Hi%20Dipesh,%20I%20would%20like%20to%20connect." target="_blank">
+    <i class="fas fa-envelope"></i>
+</a>
+
+
+    <!-- Portfolio Website -->
+    <a href="https://dipesht-02.github.io/portfolio1/" target="_blank">
+        <i class="fas fa-globe"></i>
+    </a>
+</div>
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
