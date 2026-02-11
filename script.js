@@ -142,7 +142,7 @@ window.smoothScroll = function(elementId) {
         
         // UI Feedback
         const originalColor = element.style.backgroundColor;
-        element.style.backgroundColor = 'rgba(37, 99, 235, 0.1)';
+        element.style.backgroundColor = 'rgba(47, 60, 127, 0.1)';
         setTimeout(() => { element.style.backgroundColor = originalColor; }, 600);
     }, 'smoothScroll');
 };
@@ -254,6 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 console.log(
     '%c🚀 Sublytic',
-    'font-size: 28px; font-weight: bold; background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding: 10px;'
+    'font-size: 28px; font-weight: bold; background: linear-gradient(135deg, #2f3c7f 0%, #4abd95 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding: 10px;'
 );
-console.log('%cStop Wasting Money on Forgotten Subscriptions 💰', 'font-size: 16px; color: #2563eb; font-weight: 600;');
+console.log('%cStop Wasting Money on Forgotten Subscriptions 💰', 'font-size: 16px; color: #2f3c7f; font-weight: 600;');

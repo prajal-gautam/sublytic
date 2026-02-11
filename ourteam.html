@@ -11,6 +11,9 @@
     <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <!-- External Styles -->
+    <link rel="stylesheet" href="style.css">
+
     <style>
         :root {
             --primary: #2F3C7F;
@@ -39,6 +42,7 @@
             align-items: center;
             justify-content: center;
             padding: 80px 20px;
+            margin-top: 60px;
         }
 
         .team-wrapper {
@@ -155,12 +159,49 @@
     color: #fff;
     transform: translateY(-4px) scale(1.05);
 }
-
     </style>
 </head>
 <body>
+    <!-- Header/Navigation -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="sublyticlogo.jpeg" alt="Sublytic Logo" class="logo-icon">
+                <span class="logo-text">Sublytic</span>
+            </div>
 
-<section class="team-section">
+            <!-- Desktop Navigation -->
+           <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+    <button class="nav-link" onclick="smoothScroll('what-is')" aria-label="Navigate to What Is It section">What Is It?</button>
+    <button class="nav-link" onclick="smoothScroll('features')" aria-label="Navigate to Features section">Features</button>
+    <button class="nav-link" onclick="smoothScroll('how-it-works')" aria-label="Navigate to How It Works section">How It Works</button>
+
+    <a href="index.html" class="nav-link" aria-label="Navigate to Home page">
+        Home
+    </a>
+
+    <a href="#download" class="btn-download" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app">
+        Download App
+    </a>
+</nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Mobile Navigation" aria-hidden="true">
+            <button class="nav-link-mobile" onclick="smoothScroll('what-is')" aria-label="Navigate to What Is It section">What Is It?</button>
+            <button class="nav-link-mobile" onclick="smoothScroll('features')" aria-label="Navigate to Features section">Features</button>
+            <button class="nav-link-mobile" onclick="smoothScroll('how-it-works')" aria-label="Navigate to How It Works section">How It Works</button>
+            <a href="index.html" class="nav-link-mobile" aria-label="Navigate to Home page">Home</a>
+            <a href="#download" class="btn-download" role="button" onclick="smoothScroll('download'); return false;" aria-label="Download Sublytic app">Download App</a>
+        </nav>
+    </header>
+
+    <section class="team-section">
     <div class="team-wrapper">
         <div class="team-header">
             <h1>Our Team</h1>
@@ -261,5 +302,86 @@
     </div>
 </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">S</div>
+                        <span>Sublytic</span>
+                    </div>
+                    <p class="footer-description">Empowering businesses with intelligent data analytics. Transform your raw data into actionable growth strategies.</p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on Facebook">f</a>
+                        <a href="https://twitter.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on X (Twitter)">𝕏</a>
+                        <a href="https://linkedin.com/company/sublytic" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on LinkedIn">in</a>
+                        <a href="https://instagram.com/sublyticofficial" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Sublytic on Instagram">📷</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features" onclick="smoothScroll('features'); return false;">Features</a></li>
+                        <li><a href="#download" onclick="smoothScroll('download'); return false;">Pricing</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Integrations</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Enterprise</a></li>
+                        <li><a href="#" onclick="event.preventDefault(); return false;">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://docs.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                        <li><a href="https://api.sublyticofficial.com" target="_blank" rel="noopener noreferrer">API Reference</a></li>
+                        <li><a href="https://community.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Community</a></li>
+                        <li><a href="https://blog.sublyticofficial.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                        <li><a href="https://sublyticofficial.com/case-studies" target="_blank" rel="noopener noreferrer">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://sublyticofficial.com/about" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                        <li><a href="https://sublyticofficial.com/careers" target="_blank" rel="noopener noreferrer">Careers</a></li>
+                        <li><a href="https://sublyticofficial.com/legal" target="_blank" rel="noopener noreferrer">Legal</a></li>
+                        <li><a href="https://sublyticofficial.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li><a href="mailto:sublyticofficial@gmail.com" aria-label="Email Sublytic">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Leadership</h4>
+                    <div class="footer-leadership">
+                        <div>
+                            <p class="leadership-label">Co-Founder</p>
+                            <p class="leadership-name">Prajal Gautam</p>
+                            <a href="mailto:prajal.gautam.co@gmail.com">prajal.gautam.co@gmail.com</a>
+                        </div>
+                        <div>
+                            <p class="leadership-label">Co-Founder</p>
+                            <p class="leadership-name">Dipesh Thapa</p>
+                            <a href="mailto:dipesh.02.thapa@gmail.com">dipesh.02.thapa@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Sublytic Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://sublyticofficial.com/privacy" aria-label="Read Sublytic Privacy Policy">Privacy</a>
+                    <a href="https://sublyticofficial.com/terms" aria-label="Read Sublytic Terms of Service">Terms</a>
+                    <a href="https://sublyticofficial.com/cookies" aria-label="Read Sublytic Cookie Policy">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
